@@ -1,0 +1,47 @@
+#title {
+    text-align: center;
+}
+
+.color {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+#color-palette {
+    text-align: center;
+}
+
+.green {
+    background-color: green;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.orange {
+    background-color: orange;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.purple {
+    background-color: purple;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.black {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+
+}
