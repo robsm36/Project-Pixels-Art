@@ -27,3 +27,17 @@ orangeColor.addEventListener("click", selectColor);
 greenColor.addEventListener("click", selectColor);
 purpleColor.addEventListener("click", selectColor);
 blackColor.addEventListener("click", selectColor);
+
+let pixelList = document.querySelectorAll('.pixel');
+
+function tintPixel (event) {
+    let selectedColor = document.createElement('div');
+    selectedColor.classList = document.querySelector('.selected').classList;
+    selectedColor.classList.remove("selected");
+    selectedColor.classList.remove("color");
+    event.target.classList = selectedColor.classList;
+}
+
+for (i = 0; i < 25; i += 1) {
+    pixelList[i].addEventListener("click", tintPixel);
+}
