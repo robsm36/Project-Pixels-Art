@@ -7,3 +7,10 @@ for (i = 1; i < 26; i += 1) {
     pixelBoard.appendChild(divv);
 }
 
+let orangeColor = document.querySelector('.orange');
+let greenColor = document.querySelector('.green');
+let purpleColor = document.querySelector('.purple');
+let blackColor = document.querySelector('.black');
+
+blackColor.classList.add ('selected');
+
