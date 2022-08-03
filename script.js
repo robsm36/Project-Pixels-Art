@@ -14,3 +14,16 @@ let blackColor = document.querySelector('.black');
 
 blackColor.classList.add ('selected');
 
+let colors = ['orange', 'green', 'purple', 'black']
+
+function selectColor (event) {
+    for (i = 0; i < 4; i += 1) {
+        document.querySelector('.' + colors[i]).classList.remove('selected');
+        event.target.classList.add('selected');
+    }
+}
+
+orangeColor.addEventListener("click", selectColor);
+greenColor.addEventListener("click", selectColor);
+purpleColor.addEventListener("click", selectColor);
+blackColor.addEventListener("click", selectColor);
