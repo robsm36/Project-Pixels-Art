@@ -2,17 +2,17 @@ let pixelBoard = document.querySelector('#pixel-board');
 pixelBoard.id = 'pixel-board';
 
 for (i = 1; i < 26; i += 1) {
-    let divv = document.createElement('div');
+    var divv = document.createElement('div');
     divv.className = 'pixel';
+    divv.style.backgroundColor = 'white';
     pixelBoard.appendChild(divv);
 }
+
 
 let orangeColor = document.querySelector('.orange');
 let greenColor = document.querySelector('.green');
 let purpleColor = document.querySelector('.purple');
 let blackColor = document.querySelector('.black');
-
-blackColor.classList.add ('selected');
 
 let colors = ['orange', 'green', 'purple', 'black']
 
@@ -35,7 +35,10 @@ function tintPixel (event) {
     selectedColor.classList = document.querySelector('.selected').classList;
     selectedColor.classList.remove("selected");
     selectedColor.classList.remove("color");
-    event.target.classList = selectedColor.classList;
+    selectedColor.classList.add("pixel");
+    let teste = event.target;
+    teste.style.removeProperty('background-color');
+    teste.classList = selectedColor.classList;
 }
 
 for (i = 0; i < 25; i += 1) {
