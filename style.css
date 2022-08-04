@@ -53,7 +53,7 @@
 
 #pixel-board {
     display: inline-block;
-    width: 230px;
+    width: fit-content;
 }
 
 .pixel {
@@ -64,4 +64,8 @@
 }
 
 .selected {
+}
+
+#clear {
+    text-align: center;
 }
