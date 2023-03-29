@@ -1,9 +1,14 @@
 #title {
     text-align: center;
+    font-family: 'VT323', monospace;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .color {
-    border: 1px solid black;
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -11,11 +16,11 @@
 
 #color-palette {
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .green {
     background-color: green;
-    border: 1px solid black;
     height: 40px;
     width: 40px;
     display: inline-block;
@@ -23,7 +28,6 @@
 
 .orange {
     background-color: orange;
-    border: 1px solid black;
     height: 40px;
     width: 40px;
     display: inline-block;
@@ -31,7 +35,28 @@
 
 .purple {
     background-color: purple;
-    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.red {
+    background-color: crimson;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.blue {
+    background-color: midnightblue;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.pink {
+    background-color: magenta;
+
     height: 40px;
     width: 40px;
     display: inline-block;
@@ -39,11 +64,9 @@
 
 .black {
     background-color: rgb(0, 0, 0);
-    border: 1px solid black;
     height: 40px;
     width: 40px;
     display: inline-block;
-
 }
 
 .board {
@@ -57,15 +80,72 @@
 }
 
 .pixel {
-    border: 1px solid black;
+    border: 1px solid rgba(62, 62, 62, 0.984);
+    border-style: dashed;
     height: 40px;
     width: 40px;
     display: inline-block;
+    vertical-align: top;
 }
 
-.selected {
-}
+.selected {}
 
-#clear {
+#clear,
+#resize {
     text-align: center;
+}
+
+.button-75 {
+    align-items: center;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: 0;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Codec cold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 20px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-75:active {
+    outline: 0;
+}
+
+.button-75:hover {
+    outline: 0;
+}
+
+.button-75 span {
+    transition: all 200ms;
+}
+
+.button-75:hover span {
+    transform: scale(.9);
+    opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+    .button-75 {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    .button-75 span {
+        line-height: 50px;
+    }
 }
